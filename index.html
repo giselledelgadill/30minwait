@@ -1,0 +1,72 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+<h2>Emotion to Emoji
+  <br>
+<span>&#127790;</span>
+<span>&#127875;</span>
+<span>&#127921;</span>
+<span>&#127918;</span>
+</h2>
+<br>
+<br>
+      <p style="font-size: 22px;"><h2>Take your selfie to generate emoji</h2>
+      	<br>
+        <h3>
+        <b style="color: dodgerblue">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+        </h3>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <h3>webcam- <h3>
+<div id="camera"></div>
+        <br><br>
+<button onclick="snapshot()">take picture</button>
+      </div>
+      <div>
+        <h3>prediction 1</h3>
+        <h3 id="emotion1"></h3>
+        <h3 id="emoji1"></h3>
+        <br>
+        <h3>prediction 2</h3>
+        <h3 id="emotion2"></h3>
+        <h3 id="emoji2"></h3>
+        <br>
+      </div>
+<div>
+  <h3>your picture</h3>
+  <div id="result"></div>
+  <br><br>
+  <button onclick="check()">prediction emotion</button>
+</div>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
